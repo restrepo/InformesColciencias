@@ -1,0 +1,264 @@
+
+%CD=15
+%CP=40
+%PR=25
+%IE=5
+%P=15
+
+\newpage
+\section{Resumen }
+\begin{instrucciones}
+Incluya un resumen de los resultados de conocimiento obtenidos y de las principales conclusiones en máximo dos (2) páginas.
+\end{instrucciones}
+
+
+
+
+\section{Sinopsis técnica}
+\begin{instrucciones}
+Incluya una sinopsis de resultados tipo “abstract” con fines divulgativos en un máximo de 500 palabras. Si usted lo considera conveniente, envíe además la
+sinopsis en inglés. Informe a Colciencias si autoriza su publicación, en caso de ser necesario. 
+\end{instrucciones}
+
+{}\footnote{Se autoriza la publicación de la Sinopsis técnica.}
+
+\pagestyle{plain}
+\begin{landscape}
+  \section{Cumplimiento de objetivos}
+
+  \subsection{Cumplimiento de objetivos generales}
+%   \begin{instrucciones}
+%     Para cada uno de los objetivos generales del programa/proyecto (en caso de que exista más de uno) establezca su grado de cumplimiento y proporcione una
+% explicación sobre el mismo. De no haberse cumplido el objetivo o los objetivos generales, elabore una justificación técnica por la que esta situación se presentó y
+% explique si en lugar del(os) objetivo(s) planteado(s) en un principio se obtuvo algún otro resultado. Incluya para cada objetivo general una tabla según las
+% instrucciones dadas a continuación
+%   \end{instrucciones}
+
+\renewcommand{\arraystretch}{1.5}
+
+%the width must add 1.2
+\gdef\ic{0.2}  \gdef\iic{0.3} \gdef\iiic{0.3} 
+\FPeval{\ivc}{1.2-\ic-\iic-\iiic}
+\FPeval{\iict}{\iic+\iiic}
+\hspace{-1.4cm}\begin{longtable}{|p{\ic\textwidth}|p{\iic\textwidth}|p{\iiic\textwidth}|p{\ivc\textwidth}|}
+\hline
+\gdef\objetivo{OBJETIVO GENERAL}
+\gdef\objetivotxt{
+}
+\gdef\porcentaje{100}
+\gdef\resultado{RESULTADO OBTENIDO}
+\gdef\anexo{ANEXO SOPORTE DEL DESARROLLO Y OBTENCIÓN DE RESULTADOS}
+\gdef\dificultades{DIFICULTADES}
+\gdef\observaciones{OBSERVACIONES}
+
+\objetivo & \multicolumn{2}{p{\iict\textwidth}|}{\objetivotxt} & 
+\parbox{\ivc\textwidth}{
+\begin{tabular}{l|r}
+ \% de cumplimiento & \porcentaje\% \\
+\end{tabular}
+}\\ \hline
+\resultado &\anexo  &\dificultades  & \observaciones  \\\hline
+\gdef\resultado{}
+\gdef\anexo{}
+\gdef\dificultades{}
+\gdef\observaciones{}
+\resultado &\anexo  &\dificultades  & \observaciones  \\\hline
+\end{longtable}
+
+
+  \subsection{Cumplimiento de objetivos específicos}
+%   \begin{instrucciones}
+%     Para cada uno de los objetivos específicos del programa/proyecto establezca su grado de cumplimiento y proporcione una explicación sobre el mismo. En caso
+% de no haberse cumplido el objetivo o los objetivos específicos, elabore una justificación técnica por la que esta situación se presentó y si en lugar del(os)
+% objetivo(s) planteado(s) en un principio se obtuvo algún otro resultado. Incluya para cada objetivo específico una tabla según las instrucciones dadas a
+% continuación:
+%   \end{instrucciones}
+%the width must add 1.2
+\newcommand{\ObjetivoEspecifico}[6][100]{
+%
+\gdef\objetivo{OBJETIVO ESPECÍFICO:}
+\gdef\objetivotxt{#2}
+\gdef\porcentaje{#1}
+\gdef\resultado{\centering RESULTADO OBTENIDO}
+\gdef\producto{\centering PRODUCTO (si aplica)}
+\gdef\anexo{\centering ANEXO SOPORTE DEL  DESARROLLO Y OBTENCIÓN DE RESULTADOS}
+\gdef\observaciones{ OBSERVACIONES }
+
+\objetivo & \multicolumn{2}{p{\iict\textwidth}|}{\objetivotxt} & 
+\parbox{\ivc\textwidth}{
+\begin{tabular}{l|r}
+ \% de cumplimiento & \porcentaje \% \\
+\end{tabular}
+}\\ \hline
+\resultado & \producto  &\anexo  & \observaciones  \\\hline
+%
+\gdef\resultado{#3}
+\gdef\producto{
+\parbox[t]{\iic\textwidth}{
+#4
+ }
+}
+\gdef\anexo{
+\parbox[t]{\iiic\textwidth}{
+#5
+}
+}
+\gdef\observaciones{#6}
+\resultado & \producto  &\anexo  & \observaciones  \\\hline
+}
+
+
+\gdef\ic{0.3}  \gdef\iic{0.4} \gdef\iiic{0.2} 
+\FPeval{\ivc}{round(1.2-\ic-\iic-\iiic,2)}
+\FPeval{\iict}{round(\iic+\iiic,2)}
+
+\hspace{-1.4cm}\begin{longtable}{|p{\ic\textwidth}|p{\iic\textwidth}|p{\iiic\textwidth}|p{\ivc\textwidth}|}\hline
+%
+\ObjetivoEspecifico%
+%[porcentaje]
+{%objetivo: 
+}
+{%\resultado 
+}
+{%\producto  
+}
+{%\anexo  
+}
+{%\observaciones 
+}
+%
+% %
+% \ObjetivoEspecifico%
+% %[porcentaje]
+% {%objetivo:
+% }
+% {%\resultado 
+% }
+% {%\producto  
+% }
+% {%\anexo  
+% }
+% {%\observaciones 
+% }
+% %
+
+\end{longtable}
+
+
+
+
+\end{landscape}
+\begin{landscape}
+  \subsection{Descripción de otros resultados obtenidos}
+  % Proporcione una descripción del grado de cumplimiento de los otros
+  % resultados esperados que se hayan pactado contractualmente. En caso
+  % de haber expresado estos resultados en términos de indicadores, se
+  % debe proporcionar una comparación del estado inicial y final de los
+  % mismos. Si en el desarrollo del proyecto/programa surgen resultados
+  % adicionales, relaciónelos y haga la aclaración correspondiente. Para
+  % cada resultado incluya una fila según las instrucciones dadas a
+  % continuación:
+
+%\begin{tabular}{|p{9cm}|l|l|l|}\hline
+\hspace{-1cm}  \begin{longtable}{|p{0.23\textwidth}|p{0.25\textwidth}|p{0.65\textwidth}|p{0.1\textwidth}|}\hline
+ \parbox[t]{0.23\textwidth}{\centering OTROS RESULTADOS\\ (comprometidos\\ contractualmente)} &
+\centering  INDICADOR DE \par
+CUMPLIMIENTO &\centering DESCRIPCIÓN DEL \par
+RESULTADO OBTENIDO   &\centering ANEXO\par SOPORTE\endhead\hline
+ & &  &\\\hline
+%Otros (especificar)  & & &\\\hline
+  \end{longtable}
+  
+\section{Resultados Adicionales }
+No se reportan resultados adicionales.
+
+
+\section{Cumplimiento de la metodología}
+La metodología se siguió sin modificaciones. 
+
+\section{Cronograma de ejecución}
+
+
+\gdef\ic{0.24}  \gdef\iic{0.24} \gdef\iiic{0.24}  \gdef\ivc{0.24} 
+\FPeval{\vc}{round(1.2-\ic-\iic-\iiic-\ivc,2)}
+
+\newcommand{\Cronograma}[5]{
+\gdef\actividad{#1}
+\gdef\objetivo{#2}
+\gdef\fecha{#3}
+\gdef\cambios{#4}
+\gdef\plan{#5}
+\actividad & \objetivo &\fecha  & \cambios & \plan  \\ \hline
+}
+
+\hspace{-1.4cm}\begin{longtable}{|p{\ic\textwidth}|p{\iic\textwidth}|p{\iiic\textwidth}|p{\ivc\textwidth}|p{\vc\textwidth}|}
+ \hline
+\Cronograma%
+{%actividad
+\centering ACTIVIDADES
+}%
+{%objetivo
+\centering OBJETIVO\par RELACIONADO
+}%
+{%fecha
+\centering FECHA DE\par EJECUCIÓN
+}%
+{%cambios
+\centering CAMBIOS \par SOLICITADOS Y \par APROBADOS POR \par COLCIENCIAS \par (si aplica)
+}%
+{%plan
+PLAN DE CONTINGENCIA \par 
+(si aplica)
+}
+%
+\Cronograma%
+{%actividad
+}%
+{%objetivo
+}%
+{%fecha
+}%
+{%cambios
+}%
+{%plan
+}
+%
+\end{longtable}
+
+
+
+\end{landscape}
+
+\pagestyle{fancy}
+\section{Proyección de los resultados obtenidos frente a los impactos registrados en el proyecto/programa (si
+aplica)}
+No aplica.
+\section{Aspectos financieros  }
+Ver anexos correspondientes.
+\section{Discusión y análisis  }
+\begin{instrucciones}
+  Realice el análisis y discusión de los resultados obtenidos en la ejecución del programa/proyecto, en una extensión máxima de 3 a 5 páginas.
+\end{instrucciones}
+
+\section{Conclusiones          }
+\begin{instrucciones}
+  Enuncie las conclusiones de acuerdo a los resultados obtenidos. Incluya las posibles perspectivas de investigación o continuidad del programa/proyecto.
+\end{instrucciones}
+
+\section{Siglas y abreviaturas }
+\begin{itemize}
+\item[LHC:] Siglas en inglés del Gran Colisionador de Hadrónes
+\end{itemize}
+
+%and eprint 1303.0278 and eprint 1302.5298 and eprint 1212.3310
+
+%generacion de conocimiento punta a nivel mundial
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "informefinal"
+%%% ispell-local-dictionary: "castellano8"
+%%% End: 
